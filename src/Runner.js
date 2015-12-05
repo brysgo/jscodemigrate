@@ -1,12 +1,11 @@
-var path = require('path');
 var Runner = require('jscodeshift/dist/Runner');
 
 module.exports = {
-  run: function(options) {
+  run: function({verbose}) {
     return Runner.run(
-      path.resolve('./Codeshift.js'),
-      [process.cwd() + '/src/test.js'], //FIXME: this is until I'm more confident :)
-      {babel: true}
+      __dirname + '/Codeshift.js',
+      [process.cwd()], //FIXME: this is until I'm more confident :)
+      {verbose}
     );
   }
 };

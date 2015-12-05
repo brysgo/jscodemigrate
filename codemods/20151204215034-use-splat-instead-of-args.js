@@ -8,7 +8,9 @@
 
 module.exports = {
   paths: [ 'src/test.js' ],
-  transform: ({file, root, options}) => {
+  transform: ({file, root, api, options}) => {
+    const j = api.jscodeshift;
+
     const printOptions = options.printOptions || {quote: 'single'};
 
     const ARGUMENTS = 'arguments';
@@ -82,6 +84,10 @@ module.exports = {
       .forEach(updateArgumentsCalls)
       .size() > 0;
 
-    return didTransform ? root.toSource(printOptions) : null;
+      return {
+        didTransform,
+        root,
+        printOptions
+      };
   }
 }
