@@ -7,7 +7,6 @@
  */
 
 module.exports = {
-  paths: [ 'src/test.js' ],
   transform: ({file, root, api, options}) => {
     const j = api.jscodeshift;
 
