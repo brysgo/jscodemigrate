@@ -1,0 +1,39 @@
+{
+  "name": "jscodemigrate",
+  "version": "1.0.0",
+  "description": "A wrapper around jscodeshift that runs like rails migrations.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist; babel src/ --out-dir dist/",
+    "watch": "babel src/ --out-dir dist/ --watch",
+    "test": "jest",
+    "prepublish": "npm run build"
+  },
+  "bin": {
+    "jscodemigrate": "./bin/jscodemigrate.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brysgo/jscodemigrate.git"
+  },
+  "keywords": [
+    "codemod",
+    "lint",
+    "migrate",
+    "recast"
+  ],
+  "author": "Bryan Goldstein <brysgo@gmail.com> (http://brysgo.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brysgo/jscodemigrate/issues"
+  },
+  "homepage": "https://github.com/brysgo/jscodemigrate#readme",
+  "dependencies": {
+    "babel": "^6.3.13",
+    "commander": "^2.9.0",
+    "jscodeshift": "^0.3.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.13"
+  }
+}
