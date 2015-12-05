@@ -15,11 +15,11 @@ And you're off! Look in `codemods/` to see your newly generated jscodemigration.
 I would recommended taking a look at the template, and also [js-codemod](https://github.com/cpojer/js-codemod)
 for ideas.
 
-# TODO
+## TODO
 
-1) Get suggestions from you
-2) Add `test` subcommand to check code for regressions
-3) More examples and documentation
+1. Get suggestions from you
+2. Add `test` subcommand to check code for regressions
+3. More examples and documentation
 
 # Made possible by
 * [Codeshift](https://github.com/facebook/jscodeshift) and everyone who made it possible
