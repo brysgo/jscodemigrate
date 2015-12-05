@@ -13,8 +13,4 @@ program
   .option('r, run [file ...]', 'Run js code migrations', {isDefault: true})
   .parse(process.argv);
 
-Runner.run(
-  path.resolve('./jscodemigration.js'),
-  [process.cwd()],
-  {babel: true}
-);
+Runner.run(program);
