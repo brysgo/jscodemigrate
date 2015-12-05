@@ -8,7 +8,7 @@ console.log(Object.keys(codemods).join('\n'));
 
 function inPath(needle, haystack) {
   return haystack.reduce(function(found, aPath) {
-    return found || (needle.indexOf(path.resolve(aPath)) == 0);
+    return found || (path.resolve(needle).indexOf(path.resolve(aPath)) == 0);
   }, false);
 }
 
