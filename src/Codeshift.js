@@ -19,7 +19,7 @@ module.exports = function(file, api, options) {
   let printOptions = {};
   for (let name in codemods) {
     let codemod = codemods[name];
-    if (inPath(file.path, codemod.paths)) {
+    if (!codemod.paths || inPath(file.path, codemod.paths)) {
       let result = codemod.transform({root, file, api, options});
       didTransform = didTransform || result.didTransform;
       root = result.root;
