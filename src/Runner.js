@@ -9,6 +9,8 @@ module.exports = {
     }, true);
     if (generate) {
       Generator.generate(generate);
+    } else if (test) {
+      console.log("Feature coming soon...");
     } else if (run) {
       return Runner.run(
         __dirname + '/Codeshift.js',
