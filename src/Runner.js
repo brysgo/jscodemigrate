@@ -1,4 +1,5 @@
 var Runner = require('jscodeshift/dist/Runner');
+var Generator = require('./Generator');
 
 module.exports = {
   run: function({run, generate, test, verbose}) {
@@ -6,7 +7,9 @@ module.exports = {
       verbose,
       paths: [process.cwd()]
     }, true);
-    if (run) {
+    if (generate) {
+      Generator.generate(generate);
+    } else if (run) {
       return Runner.run(
         __dirname + '/Codeshift.js',
         conf.paths,
