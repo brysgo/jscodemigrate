@@ -1,4 +1,4 @@
 
-let helloWorld = (...args) => {
-  console.log(args)
+let helloWorld = () => {
+  console.log(arguments)
 }

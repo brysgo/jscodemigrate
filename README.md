@@ -3,7 +3,7 @@
 This is a simple wrapper around jscodeshift that give you a migration like interface.
 
 Install in your project:
-
+    npm install -g babel-cli
     npm install jscodemigrate --save-dev
 
 Generate your first codemod:
