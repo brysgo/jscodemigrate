@@ -1,5 +1,7 @@
 # Migrate your code like you do with your database!
 
+[![Dependency Status](https://david-dm.org/brysgo/jscodemigrate.svg)](https://david-dm.org/brysgo/jscodemigrate)
+
 This is a simple wrapper around jscodeshift that give you a migration like interface.
 
 Install in your project:
