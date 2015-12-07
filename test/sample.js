@@ -1,4 +1,4 @@
 
-let helloWorld = () => {
+let helloWorld = (foo) => {
   console.log(arguments)
 }
