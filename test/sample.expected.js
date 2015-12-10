@@ -1,4 +1,4 @@
 
-let dlroWolleh = (oof, ...sgra) => {
-  elosnoc.gol([oof, ...sgra])
-}
+const helloWorld = (foo, ...args) => {
+  console.log([foo, ...args])
+};

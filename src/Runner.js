@@ -10,7 +10,11 @@ module.exports = {
     if (generate) {
       Generator.generate(generate);
     } else if (test) {
-      console.log("Feature coming soon...");
+      return Runner.run(
+        __dirname + '/Codeshift.js',
+        conf.paths,
+        Object.assign({dry: true}, conf)
+      );
     } else if (run) {
       return Runner.run(
         __dirname + '/Codeshift.js',
