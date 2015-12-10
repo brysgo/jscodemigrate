@@ -70,10 +70,9 @@ for ideas.
 
 ## TODO
 
-1. Get suggestions from you
-2. Ability to search `node_modules` for api change codemods and bring them into project 
-3. Add `test` subcommand to check code for regressions
-4. More examples and documentation
+1. Ability to search `node_modules` for api change codemods and bring them into project 
+2. Improve output of `test` subcommand
+3. More examples and documentation
 
 # Made possible by
 * [Codeshift](https://github.com/facebook/jscodeshift) and everyone who made it possible
