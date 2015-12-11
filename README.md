@@ -8,7 +8,6 @@
 This is a simple wrapper around jscodeshift that give you a migration like interface.
 
 Install in your project:
-    npm install -g babel-cli
     npm install jscodemigrate --save-dev
 
 Generate your first codemod:
@@ -19,6 +18,10 @@ And you're off! Look in `codemods/` to see your newly generated jscodemigration.
 
 I would recommended taking a look at the template, and also [js-codemod](https://github.com/cpojer/js-codemod)
 for ideas.
+
+# Pull in codemigrations from npm dependencies
+
+    jscodemigrate deps
 
 # Differences from writing jscodeshift
 
@@ -60,19 +63,13 @@ for ideas.
 ## Per code migration config
 
     module.exports = {
+      moduleApiChange: true, // Tell jscodemigrate to pull this into dependencies
       paths: [ "tests/" ], // even if your .codemodrc file looks in all your files, this will only run in 'tests/' directory
       // Tranform is the only thing that isn't optional
       transform: ({file, root, api, options}) => {
         ...
       }
     }
-
-
-## TODO
-
-1. Ability to search `node_modules` for api change codemods and bring them into project 
-2. Improve output of `test` subcommand
-3. More examples and documentation
 
 # Made possible by
 * [Codeshift](https://github.com/facebook/jscodeshift) and everyone who made it possible
