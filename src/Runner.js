@@ -1,8 +1,9 @@
 var Runner = require('jscodeshift/dist/Runner');
 var Generator = require('./Generator');
+var DependencyCrawler = require('./DependencyCrawler');
 
 module.exports = {
-  run: function({run, generate, test, verbose, dependencies, args}) {
+  run: ({run, generate, test, verbose, dependencies, args}) => {
     if (args && args.length > 0) {
       console.error('Unrecognized subcommand')
       return new Error('Unrecognized subcommand')
@@ -20,7 +21,7 @@ module.exports = {
         Object.assign({dry: true}, conf)
       );
     } else if (dependencies) {
-      console.log('Feature coming soon')
+      DependencyCrawler.run()
     } else {
       return Runner.run(
         __dirname + '/Codeshift.js',

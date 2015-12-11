@@ -6,7 +6,8 @@ function dasherize(name) {
 
 var fileTemplate = `
 module.exports = {
-  // paths: [ 'optional/', 'listOfFiles.js' ],
+  // paths: [ 'optional/', 'listOfFiles.js' ], // More specific path to apply
+  // moduleApiChange: true, // Tell jscodemigrate to pull this into dependencies
   transform: ({file, root, api, options}) => {
     const j = api.jscodeshift;
 
