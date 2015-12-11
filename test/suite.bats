@@ -28,4 +28,6 @@ TEST_OUTPUT_LINE=$RUN_OUTPUT_LINE+1
 @test "dependencies subcommand pulls in codemods from the node_modules directory" {
   run jscodemigrate deps
   [ "$status" -eq 0 ]
+  [ "$(ls codemods | grep 'sample-api-change')" = "20151211042858-sample-api-change.js" ]
+  rm codemods/20151211042858-sample-api-change.js
 }
