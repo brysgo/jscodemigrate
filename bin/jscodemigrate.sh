@@ -2,9 +2,8 @@
 
 'use strict';
 
-require('babel-register')({ presets: [ "es2015", "stage-0"] });
 var path = require('path');
-var Runner = require('../src/Runner.js');
+var Runner = require('../dist/Runner.js');
 var program = require('commander');
 
 program

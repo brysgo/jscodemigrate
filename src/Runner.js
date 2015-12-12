@@ -11,7 +11,8 @@ module.exports = {
     }
     var conf = require('rc')('codemod', {
       verbose,
-      paths: [process.cwd()]
+      paths: [process.cwd()],
+      babel: true
     }, true);
     if (generate) {
       Generator.generate(generate);

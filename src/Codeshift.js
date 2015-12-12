@@ -1,6 +1,5 @@
 'use strict'
 
-require('babel-register')({ presets: [ "es2015", "stage-0"] });
 var path = require('path');
 var require_tree = require('require-tree');
 var codemods = require_tree( process.cwd() + '/codemods');

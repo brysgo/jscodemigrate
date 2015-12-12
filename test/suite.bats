@@ -29,6 +29,7 @@ TEST_OUTPUT_LINE=$RUN_OUTPUT_LINE+1
   run jscodemigrate deps
   [ "$status" -eq 0 ]
   [ "$(ls codemods | grep 'sample-api-change')" = "20151211042858-sample-api-change.js" ]
+  [ "$(ls codemods | grep 'not-an-api-change')" = "" ]
   rm codemods/20151211042858-sample-api-change.js
 }
 
