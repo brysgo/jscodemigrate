@@ -1,4 +1,5 @@
 var fs = require('fs');
+import { execSync } from 'child_process'
 
 function dasherize(name) {
   return require('dashify')(name);
@@ -26,6 +27,7 @@ module.exports = {
 
 module.exports = {
   generate: function(name) {
+    execSync('mkdir -p codemods')
     var templateName = `./codemods/${require('moment')().format("YYYYMMDDHHmmss")}-${dasherize(name)}.js`
     fs.writeFile(templateName, fileTemplate, function(err) {
       if(err) {
