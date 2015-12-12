@@ -5,9 +5,6 @@ var path = require('path');
 var require_tree = require('require-tree');
 var codemods = require_tree( process.cwd() + '/codemods');
 
-console.log("Running codemods...");
-console.log(Object.keys(codemods).join('\n'));
-
 function inPath(needle, haystack) {
   return haystack.reduce(function(found, aPath) {
     return found || (path.resolve(needle).indexOf(path.resolve(aPath)) == 0);

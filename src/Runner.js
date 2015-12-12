@@ -1,6 +1,7 @@
 var Runner = require('jscodeshift/dist/Runner');
 var Generator = require('./Generator');
 var DependencyCrawler = require('./DependencyCrawler');
+import { execSync } from 'child_process'
 
 module.exports = {
   run: ({run, generate, test, verbose, dependencies, args}) => {
@@ -15,6 +16,8 @@ module.exports = {
     if (generate) {
       Generator.generate(generate);
     } else if (test) {
+      console.log("Testing codemods...");
+      console.log(execSync('ls codemods').toString());
       return Runner.run(
         __dirname + '/Codeshift.js',
         conf.paths,
@@ -23,6 +26,8 @@ module.exports = {
     } else if (dependencies) {
       DependencyCrawler.run()
     } else {
+      console.log("Running codemods...");
+      console.log(execSync('ls codemods').toString());
       return Runner.run(
         __dirname + '/Codeshift.js',
         conf.paths,
