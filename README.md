@@ -54,11 +54,10 @@ for ideas.
 # Configuration
 
 ## .codemodrc file
-    {
-      "paths": [ "src/", "tests/", "special/file.js" ] // List of paths for jscodeshift to look through
-    } 
-    // Don't worry about being too broad, each migration can specify a subset of this
-    // Also, this defaults to your projects root directory (see jscodeshift)
+    { // These options mostly mirror jscodeshift's command line args
+      "paths": [ "src/", "tests/", "special/file.js" ] // Paths to search when doing codemods
+      "extensions": "js,es6" // Comma separated extensions to consider
+    }
 
 ## Per code migration config
 
