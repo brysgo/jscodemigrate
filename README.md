@@ -55,7 +55,7 @@ for ideas.
 
 ## .codemodrc file
     { // These options mostly mirror jscodeshift's command line args
-      "paths": [ "src/", "tests/", "special/file.js" ] // Paths to search when doing codemods
+      "paths": [ "src/", "tests/", "special/file.js" ], // Paths to search when doing codemods
       "extensions": "js,es6" // Comma separated extensions to consider
     }
 
