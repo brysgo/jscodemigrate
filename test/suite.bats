@@ -31,3 +31,10 @@ TEST_OUTPUT_LINE=$RUN_OUTPUT_LINE+1
   [ "$(ls codemods | grep 'sample-api-change')" = "20151211042858-sample-api-change.js" ]
   rm codemods/20151211042858-sample-api-change.js
 }
+
+@test "generator creates new codemod with timestamp" {
+  run jscodemigrate g TestThatGeneratorWorks
+  [ "$status" -eq 0 ]
+  [ $(expr $(ls codemods | grep 'test-that-generator-works') : "..............-test-that-generator-works.js") -ne 0 ]
+  rm codemods/*-test-that-generator-works.js
+}
