@@ -17,11 +17,11 @@ TEST_OUTPUT_LINE=$RUN_OUTPUT_LINE+1
   [ $(expr "${lines[$TEST_OUTPUT_LINE]}" : ".*1 ok") -ne 0 ]
 }
 
-@test "testing code migrations shows files as unmodifed that will be unchanged" {
+@test "testing code migrations shows files as unmodified that will be unchanged" {
   cp sample.expected.js sample.js
   run jscodemigrate test
   [ "$status" -eq 0 ]
-  [ $(expr "${lines[$TEST_OUTPUT_LINE]}" : ".*1 unmodifed") -ne 0 ]
+  [ $(expr "${lines[$TEST_OUTPUT_LINE]}" : ".*1 unmodified") -ne 0 ]
   git checkout sample.js
 }
 
