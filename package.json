@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/brysgo/jscodemigrate#readme",
   "dependencies": {
-    "babel-core": "^5.8.21",
-    "babel-runtime": "^5.6.18",
+    "babel-core": "^6.24.0",
+    "babel-runtime": "^6.23.0",
     "commander": "^2.9.0",
     "dashify": "^0.2.0",
     "jscodeshift": "^0.3.11",
@@ -39,7 +39,7 @@
     "require-tree": "^1.1.1"
   },
   "devDependencies": {
-    "babel": "^5.8.34",
+    "babel": "^6.23.0",
     "bats": "^0.4.2"
   }
 }
