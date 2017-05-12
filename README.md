@@ -1,5 +1,7 @@
 # Migrate your code like you do with your database!
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/brysgo/jscodemigrate.svg)](https://greenkeeper.io/)
+
 [![Join the chat at https://gitter.im/brysgo/jscodemigrate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/brysgo/jscodemigrate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![Dependency Status](https://david-dm.org/brysgo/jscodemigrate.svg)](https://david-dm.org/brysgo/jscodemigrate)
