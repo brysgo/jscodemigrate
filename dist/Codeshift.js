@@ -15,8 +15,8 @@ module.exports = function (file, api, options) {
   var root = j(file.source);
   var didTransform = false;
   var printOptions = {};
-  for (var _name in codemods) {
-    var codemod = codemods[_name];
+  for (var name in codemods) {
+    var codemod = codemods[name];
     if (!codemod.paths || inPath(file.path, codemod.paths)) {
       var result = codemod.transform({ root: root, file: file, api: api, options: options });
       didTransform = didTransform || result.didTransform;

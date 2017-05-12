@@ -6,14 +6,15 @@ var Runner = require('jscodeshift/dist/Runner');
 var Generator = require('./Generator');
 var DependencyCrawler = require('./DependencyCrawler');
 
+
 module.exports = {
   run: function run(_ref) {
-    var _run = _ref.run;
-    var generate = _ref.generate;
-    var test = _ref.test;
-    var verbose = _ref.verbose;
-    var dependencies = _ref.dependencies;
-    var args = _ref.args;
+    var _run = _ref.run,
+        generate = _ref.generate,
+        test = _ref.test,
+        verbose = _ref.verbose,
+        dependencies = _ref.dependencies,
+        args = _ref.args;
 
     if (args && args.length > 0) {
       console.error('Unrecognized subcommand');
