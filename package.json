@@ -42,6 +42,6 @@
     "babel": "^6.23.0",
     "babel-cli": "^6.24.0",
     "babel-preset-latest": "^6.24.0",
-    "bats": "^0.4.2"
+    "bats": "^1.0.0"
   }
 }
