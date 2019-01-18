@@ -736,9 +736,9 @@ balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
 
-bats@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/bats/-/bats-0.4.2.tgz#81f222bbcbb083d1528b3e8830a6e8f314876ec6"
+bats@^1.0.2:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/bats/-/bats-1.1.0.tgz#6fc44f283ed4e7af2b6ffac93ec5026a1acbdc66"
 
 binary-extensions@^1.0.0:
   version "1.11.0"
@@ -832,9 +832,9 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
-dashify@^0.2.0:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/dashify/-/dashify-0.2.2.tgz#6a07415a01c91faf4a32e38d9dfba71f61cb20fe"
+dashify@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/dashify/-/dashify-2.0.0.tgz#fff270ca2868ca427fee571de35691d6e437a648"
 
 debug@^2.1.2, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
