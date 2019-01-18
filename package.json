@@ -32,7 +32,7 @@
     "babel-core": "^6.24.0",
     "babel-runtime": "^6.23.0",
     "commander": "^2.9.0",
-    "dashify": "^1.0.0",
+    "dashify": "^2.0.0",
     "jscodeshift": "^0.6.0",
     "moment": "^2.18.1",
     "rc": "^1.1.5",
