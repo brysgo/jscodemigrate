@@ -1,6 +1,6 @@
 {
   "name": "jscodemigrate",
-  "version": "1.0.5",
+  "version": "0.0.0-semantic-release",
   "description": "A wrapper around jscodeshift that runs like rails migrations.",
   "main": "index.js",
   "scripts": {
