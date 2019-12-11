@@ -33,7 +33,7 @@
     "babel-runtime": "^6.23.0",
     "commander": "^3.0.0",
     "dashify": "^2.0.0",
-    "jscodeshift": "^0.6.1",
+    "jscodeshift": "^0.7.0",
     "moment": "^2.18.1",
     "rc": "^1.1.5",
     "require-tree": "^1.1.1"
